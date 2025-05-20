@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<style>
+    nav{
+        text-align: center;
+        display: flex;
+        /* margin: 20px; */
+    }
+
+    .nav-left{
+        flex: 1;
+        font-size: 20px;
+    }
+    .nav-right{
+        flex: 1;
+        height: 10px;
+        opacity: 0.5;
+        margin-top: 20px;
+    }
+
+    .img1{
+        height: 20px;
+    }
+
+    ul li{
+        display: inline-block;
+        color: grey;
+        margin: 20px;
+    }
+
+    h1{
+        color: var(--Solid-Heading, #42446E);
+        font-family: Poppins;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 70px; /* 120.69% */
+        letter-spacing: -1px;;
+        margin-left: 70px;
+        }
+    
+    i{
+        font-style: normal;
+        background: linear-gradient(90deg, #13B0F5, #E70FAA);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    h2{
+        font-size: 36px;
+        text-align: center;
+        color: var(--Solid-Heading, #42446E);
+        }
+
+    p{
+        text-align: center;
+        }
+
+    footer p{
+        font-size: 12px;
+        text-align: center;
+        color:grey;
+    }
+
+    .box{
+        text-align: center;
+        display: inline-block;
+        width: 200px;
+        height: 360px;
+        background-color: #42446E;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .projects-container {
+        text-align: center;
+
+    }
+
+</style>
+
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>토리</title>
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <p><i><b>{007}
+                        <br>
+                        bear</b></i>
+                    </p>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Tech Stack</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <p>
+                        <img class='img1' src="https://icons.veryicon.com/png/o/miscellaneous/template-4/twitter-165.png">
+                        <img class='img1' src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+                        <img class='img1' src="https://static-00.iconduck.com/assets.00/linkedin-with-circle-icon-2048x2048-np6yltn1.png">
+                    </p>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Hi 🐻, <br>
+                    제 이름은 <i>곰돌</i>이에요! <br>
+                    저는 웹 개발을 잘 해요!
+                </h1>
+            </section>
+
+            <section>
+                <h2>My Tech Stack</h2>
+                <p>제가 주로 사용하는 기술 스택들이에요</p>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <p>제가 진행한 프로젝트들이에요</p>
+
+                <div class="projects-container">
+                    <div class="box">Project1</div>
+                    <div class="box">Project2</div>
+                    <div class="box">Project3</div><br>
+                    <div class="box">Project4</div>
+                    <div class="box">Project5</div>
+                    <div class="box">Project6</div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; Designed and built by Bear</p>
+        </footer>
+
+
+    </body>
+</html>
