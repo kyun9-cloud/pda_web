@@ -75,7 +75,24 @@
 
     .projects-container {
         text-align: center;
+    }
 
+    .main-intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 70px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        border: 4px solid transparent;
+        background: linear-gradient(white, white) padding-box,
+                    linear-gradient(90deg, #13B0F5, #E70FAA) border-box;
     }
 
 </style>
@@ -84,7 +101,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>토리</title>
+        <title>곰돌</title>
     </head>
 
     <body>
@@ -117,17 +134,26 @@
         </header>
 
         <main>
-            <section>
+            <section class="main-intro">
                 <h1>Hi 🐻, <br>
                     제 이름은 <i>곰돌</i>이에요! <br>
-                    저는 웹 개발을 잘 해요!
+                    저는 연어를 잘먹어용
                 </h1>
+                <img src="https://media.istockphoto.com/id/1088878752/vector/bear-silhouette-vector-illustration.jpg?s=612x612&w=0&k=20&c=9qzMR9ECZRws-ZZQzzOISC3Xtzd_3W7VSKHNQcO6NrU=" alt="곰돌의 프로필 이미지" class="profile-image">
             </section>
+
+            <br>
+            <br>
+            <br>
 
             <section>
                 <h2>My Tech Stack</h2>
                 <p>제가 주로 사용하는 기술 스택들이에요</p>
             </section>
+
+            <br>
+            <br>
+            <br>
 
             <section>
                 <h2>Projects</h2>
@@ -144,6 +170,10 @@
             </section>
 
         </main>
+
+        <br>
+        <br>
+        <br>
 
         <footer>
             <p>&copy; Designed and built by Bear</p>
