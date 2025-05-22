@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <style>
+     
     nav{
         position: fixed;
         top: 0;
@@ -16,11 +17,22 @@
         flex: 1;
         font-size: 20px;
     }
+
     .nav-right{
         flex: 1;
         height: 10px;
         opacity: 0.5;
         margin-top: 20px;
+    }
+
+    @media all and (max-width: 600px){
+        nav{
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .nav-menu{
+            order: 2;
+        }
     }
 
     .img1{
@@ -33,6 +45,10 @@
         margin: 20px;
     }
 
+    .body{
+        text-align: center;
+    }
+
     h1{
         color: var(--Solid-Heading, #42446E);
         font-family: Poppins;
@@ -41,7 +57,7 @@
         font-weight: 700;
         line-height: 70px; /* 120.69% */
         letter-spacing: -1px;;
-        margin-left: 70px;
+        /* margin-left: 70px; */
         }
     
     i{
@@ -68,42 +84,33 @@
         color:grey;
     }
 
+    .project{
+        text-align: center;
+    }
+
     .projects-container {
         text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .box{
         text-align: center;
         display: inline-block;
-        width: 200px;
-        height: 360px;
+        width: 250px;
+        height: 400px;
         background-color: #42446E;
         border-radius: 10px;
         margin: 10px;
     }
 
-    .sticky {
-        position: sticky;
-        text-align: center;
-        top: 0;
-        z-index: 100;
-    }
-
-    .box2{
-        text-align: center;
-        display: inline-block;
-        width: 400px;
-        height: 100px;
-        background-color: #42446E;
-        border-radius: 10px;
-
-    }
-
     .main-intro {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0 70px;
+        margin-top: 100px;
     }
 
     .profile-image {
@@ -116,6 +123,21 @@
         background: linear-gradient(white, white) padding-box,
                     linear-gradient(90deg, #13B0F5, #E70FAA) border-box;
     }
+
+    @media all and (max-width: 600px){
+        .main-intro{
+            flex-wrap: wrap;
+        }
+        .profile-image{
+            order: -1;
+        }
+
+        .projects-container{
+        }
+    }
+
+
+
 
     
 
@@ -134,7 +156,6 @@
 
 
     <body>
-
 
         <header>
             <nav>
@@ -185,13 +206,9 @@
             <br>
             <br>
 
-            <section>
+            <section class="project">
                 <h2>Projects</h2>
                 <p>제가 진행한 프로젝트들이에요</p>
-
-                <!-- <div class="sticky">
-                    <div class="box2">Sticky Box</div>
-                </div> -->
 
                 <br>
 
@@ -199,7 +216,6 @@
                     <div class="box">Project1</div>
                     <div class="box">Project2</div>
                     <div class="box">Project3</div>
-                    <br>
                     <div class="box">Project4</div>
                     <div class="box">Project5</div>
                     <div class="box">Project6</div>
